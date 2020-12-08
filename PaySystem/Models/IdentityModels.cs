@@ -10,6 +10,7 @@ namespace PaySystem.Models
     public class ApplicationUser : IdentityUser
     {
         public int UserBalance { get; set; }
+        public int BalanceNumber { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

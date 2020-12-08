@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySystem", "PaySystem.csproj", "{C46732FF-5A8E-4A33-BFD2-E892347B5F9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySystem", "PaySystem.csproj", "{C9A2FF24-4362-4AA1-AB74-92BC8CEEC330}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C46732FF-5A8E-4A33-BFD2-E892347B5F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C46732FF-5A8E-4A33-BFD2-E892347B5F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C46732FF-5A8E-4A33-BFD2-E892347B5F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C46732FF-5A8E-4A33-BFD2-E892347B5F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A2FF24-4362-4AA1-AB74-92BC8CEEC330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A2FF24-4362-4AA1-AB74-92BC8CEEC330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A2FF24-4362-4AA1-AB74-92BC8CEEC330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A2FF24-4362-4AA1-AB74-92BC8CEEC330}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {057C7E29-3EF7-407B-90B8-659CD12D5EEA}
+		SolutionGuid = {6C3511DF-A5CD-470F-8C20-37B0C9535F08}
 	EndGlobalSection
 EndGlobal

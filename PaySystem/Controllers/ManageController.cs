@@ -67,7 +67,6 @@ namespace PaySystem.Controllers
             var model = new IndexViewModel
             {
                 HasPassword = HasPassword(),
-                //HasPassword = HasPassword(),
                 PhoneNumber = await UserManager.GetPhoneNumberAsync(userId),
                 TwoFactor = await UserManager.GetTwoFactorEnabledAsync(userId),
                 Logins = await UserManager.GetLoginsAsync(userId),
@@ -75,8 +74,6 @@ namespace PaySystem.Controllers
             };
             return View(model);
         }
-
-
 
         //
         // POST: /Manage/RemoveLogin

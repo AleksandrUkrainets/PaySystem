@@ -1,4 +1,4 @@
-﻿namespace PaySystem.Migrations
+namespace PaySystem.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

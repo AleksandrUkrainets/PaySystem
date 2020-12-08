@@ -60,7 +60,6 @@ namespace PaySystem.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
-        public string PhoneNumber { get; set; }
     }
 
     public class RegisterViewModel
