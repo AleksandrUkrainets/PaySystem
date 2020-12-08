@@ -1,0 +1,25 @@
+﻿@model PaySystem.Models.BalanceModels
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Balance Page";
+}
+
+<div class="jumbotron">
+    <h1>To Pay</h1>
+    <p class="lead">Page for transferring money to a friend's account.</p>
+
+    @foreach (var u in ViewBag.Users)
+    {
+        if (User.Identity.GetUserName() == u.UserName)
+        {
+            <strong>
+                <td><p>Your number of balance: @u.BalanceNumber</p></td>
+                <td><p>Remaining money in your account: @u.UserBalance</p></td>
+            </strong>
+        }
+
+    }
+
+    <p><a href="https://google.com" class="btn btn-primary btn-lg">to transfer &raquo;</a></p>
+</div>
+

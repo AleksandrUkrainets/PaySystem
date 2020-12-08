@@ -151,7 +151,8 @@ namespace PaySystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                int now = (int)(DateTime.Now - new DateTime(2020, 1, 1)).TotalSeconds;
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, UserBalance = 1000, BalanceNumber = now };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
