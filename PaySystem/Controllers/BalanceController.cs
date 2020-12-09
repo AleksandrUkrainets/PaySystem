@@ -23,19 +23,24 @@ namespace PaySystem.Controllers
             return View();
         }
 
-        
+
         [HttpPost]
         public ViewResult Balance(BalanceModels balance)
         {
-            var userRecivier = db.Users
-                .Where(c => c.BalanceNumber == balance.ReceiverBalanceNumber)
-                .FirstOrDefault();
-            userRecivier.UserBalance += balance.ReceiverValue;
-
             var userPayer = db.Users
                 .Where(c => c.BalanceNumber == balance.PayerBalanceNumber)
                 .FirstOrDefault();
-            userPayer.UserBalance -= balance.ReceiverValue;
+            if (userPayer.UserBalance - balance.ReceiverValue >= 0 || balance.ReceiverValue >= 0)
+            {
+                userPayer.UserBalance -= balance.ReceiverValue;
+
+                var  userRecivier = db.Users
+                    .Where(c => c.BalanceNumber == balance.ReceiverBalanceNumber)
+                    .FirstOrDefault();
+                userRecivier.UserBalance += balance.ReceiverValue;
+            }
+                
+
             db.SaveChanges();
 
             var users = db.Users;

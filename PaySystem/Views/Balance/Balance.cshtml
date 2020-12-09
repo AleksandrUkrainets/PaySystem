@@ -5,7 +5,7 @@
 }
 
 <div class="jumbotron">
-    <h1>To Pay</h1>
+    <h2>To Pay</h2>
     <p class="lead">Page for transferring money to a friend's account.</p>
 
     @foreach (var u in ViewBag.Users)
@@ -13,7 +13,7 @@
         if (User.Identity.GetUserName() == u.UserName)
         {
             <strong>
-                <td><p>Your number of balance: @u.BalanceNumber</p></td>
+                <td><p>Your number of account: @u.BalanceNumber</p></td>
                 <td><p>Remaining money in your account: @u.UserBalance</p></td>
                 <div>
                     <form method="post" action="">
@@ -30,7 +30,7 @@
                                 <input type="hidden" value="@u.UserBalance" name="PayerUserBalance" />
                                 <input type="hidden" value="@u.BalanceNumber" name="PayerBalanceNumber" />
                             </tr>
-                            <tr><td><input type="submit" formtarget=_self value="Отправить" /> </td><td></td></tr>
+                            <tr><td><input type="submit" formtarget=_self value="Transfer =>" /> </td><td></td></tr>
                         </table>
                     </form>
                 </div>
