@@ -15,11 +15,34 @@
             <strong>
                 <td><p>Your number of balance: @u.BalanceNumber</p></td>
                 <td><p>Remaining money in your account: @u.UserBalance</p></td>
+                <div>
+                    <form method="post" action="">
+                        <table>
+                            <tr>
+                                <td><p>To input № account your frend:    </p></td>
+                                <td><input type="number" name="ReceiverBalanceNumber" min="1" /> </td>
+                            </tr>
+                            <tr>
+                                <td><p>To input summ for transfering:</p></td>
+                                <td>
+                                    <input type="number" name="ReceiverValue" min="1" />
+                                </td>
+                                <input type="hidden" value="@u.UserBalance" name="PayerUserBalance" />
+                                <input type="hidden" value="@u.BalanceNumber" name="PayerBalanceNumber" />
+                            </tr>
+                            <tr><td><input type="submit" formtarget=_self value="Отправить" /> </td><td></td></tr>
+                        </table>
+                    </form>
+                </div>
+
             </strong>
         }
 
     }
 
-    <p><a href="https://google.com" class="btn btn-primary btn-lg">to transfer &raquo;</a></p>
-</div>
+
+
+
+
+    </div>
 

@@ -7,7 +7,10 @@ namespace PaySystem.Models
 {
     public class BalanceModels
     {
-        public int UserBalance { get; set; }
-        public int BalanceNumber { get; set; }
+        public int PayerUserBalance { get; set; }
+        public int PayerBalanceNumber { get; set; }
+        public int ReceiverUserBalance { get; set; }
+        public int ReceiverBalanceNumber { get; set; }
+        public int ReceiverValue { get; set; }
     }
 }
